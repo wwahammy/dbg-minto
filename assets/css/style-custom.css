@@ -318,7 +318,10 @@ p {
 @media (min-width:768px) {
     .lead {
     font-size: 21px;
-}
+    }
+    .single.container{
+    width: 780px !important;
+    }
 }.small, small {
     font-size: 85%}
 cite {
@@ -581,14 +584,19 @@ pre code {
     .container {
     width: 750px;
 }
-}@media (min-width:992px) {
+}
+@media (min-width:992px) {
     .container {
     width: 970px;
 }
-}@media (min-width:1200px) {
+}
+@media (min-width:1200px) {
     .container {
     width: 1170px;
-}
+    }
+    .rwd-menu{ 
+    display: none;
+    }
 }.container-fluid {
     margin-right: auto;
     margin-left: auto;
@@ -1487,7 +1495,6 @@ article:hover .overlay {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',  endColorstr='#e74d3c',  GradientType=0);
 }
 .single.container {
-    width: 780px!important;
     margin-top: 100px;
 }
 .single h1, .single h2, .single h3, .single h4, .single h5, .single h6 {
@@ -1563,6 +1570,7 @@ article:hover .overlay {
     top: 0;
     left: 0;
     background: #4c4d57;
+    z-index: 1;
 }
 .fixed-logo a:hover{ border-bottom: none; }
 .fixed-logo img {
@@ -1588,9 +1596,13 @@ article:hover .overlay {
     .work article {
     height: 300px!important;
 }
-}@media (max-width:768px) {
+}
+@media (max-width:768px) {
     .content.container-fluid {
     margin: 100px 2% 40px!important;
+}
+.single-inner{
+    padding: 0 40px;
 }
 .content h1, .content h2, .typed-cursor {
     font-size: 51px;
@@ -1607,8 +1619,8 @@ article:hover .overlay {
     border-width: 11px;
 }
 .content p {
-    font-size: 21px;
-    line-height: 46px;
+    font-size: 17px;
+    line-height: 39px;
 }
 a.button {
     padding: 7px 11px 5px;
@@ -1618,9 +1630,25 @@ span.underline {
     padding-bottom: 4px;
 }
 .work .box img {
-    width: 100%}
-}@media (max-width:1200px) {
-    .content.container-fluid {
+    width: 100%;
+}
+.single h1{
+    font-size: 50px;
+}
+.single h3{
+    font-size: 26px;
+    line-height: 40px;
+}
+.single p{
+    font-size: 16px;
+    line-height: 33px;
+}
+}
+@media (max-width:992px){
+
+}
+@media (max-width:1200px) {
+.content.container-fluid {
     margin: 150px 6% 85px;
 }
 .content p br {
@@ -1629,5 +1657,15 @@ span.underline {
 .content p {
     margin-top: 35px;
 }
+.fixed-logo{
+    display: none;
+}
+.single.container{
+    margin-top: 170px;
+}
+.rwd-menu{ position: fixed; top: 0; left: 0; background: #4c4d57; width: 100%; height: 70px; z-index: 1; }
+.rwd-menu img{ height: 70px; }
+.rwd-menu a.arrow img{ height: 50px; margin-left: 10px; }
+.rwd-menu a.lgo img{ }
 }
 .hidden{ display: none; }
