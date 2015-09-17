@@ -1391,18 +1391,15 @@ hr.tiny {
     position: relative;
     height: 360px;
 }
-
-// Custom rotating colors!
-article:nth-child(3n+0) .overlay {
-  background: rgba(81, 206, 252, 0.75);
-}
 article:nth-child(3n+1) .overlay {
   background: rgba(252, 82, 81, .75);
 }
 article:nth-child(3n+2) .overlay {
+  background: rgba(81, 206, 252, 0.75);
+}
+article:nth-child(3n+3) .overlay {
   background: rgba(100, 222, 81, 0.71);
 }
-
 .overlay {
     color: #fff;
     display: block;
