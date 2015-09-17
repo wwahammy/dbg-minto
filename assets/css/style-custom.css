@@ -1358,8 +1358,9 @@ hr.tiny {
 }
 .typed-cursor {
     opacity: 1;
-    -webkit-animation: blink .7s infinite;
-    animation: blink .7s infinite;
+    /*Uncomment if you want a blinking cursor*/
+    /*-webkit-animation: blink .7s infinite;
+    animation: blink .7s infinite;*/
     font-size: 150px;
     display: inline;
     font-weight: 700;
@@ -1390,21 +1391,33 @@ hr.tiny {
     position: relative;
     height: 360px;
 }
+
+// Custom rotating colors!
+article:nth-child(3n+0) .overlay {
+  background: rgba(81, 206, 252, 0.75);
+}
+article:nth-child(3n+1) .overlay {
+  background: rgba(252, 82, 81, .75);
+}
+article:nth-child(3n+2) .overlay {
+  background: rgba(100, 222, 81, 0.71);
+}
+
 .overlay {
-    background: rgba(252, 82, 81, .75);
     color: #fff;
     display: block;
     position: absolute;
     height: 100%;
     left: 0;
-    opacity: 0;
+    // opacity: 0;
     padding: 11%;
-    transition: opacity .3s;
+    // transition: opacity .3s;
     text-decoration: none;
     top: 0;
     width: 100%;
     z-index: 1;
 }
+
 article:hover .overlay {
     opacity: 1;
     transition: opacity .3s;
@@ -1431,13 +1444,13 @@ article:hover .overlay {
     transition: -webkit-transform .7s;
     transition: transform .7s;
 }
-.box:hover img {
+/*.box:hover img {
     -webkit-transform: rotate(-9deg) scale(1.15);
     -ms-transform: rotate(-9deg) scale(1.15);
     transform: rotate(-9deg) scale(1.15);
     transition: -webkit-transform .7s;
     transition: transform .7s;
-}
+}*/
 .work .project .box-content {
     position: relative;
     top: 8%;

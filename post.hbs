@@ -9,18 +9,18 @@
 <div class="container single">
     <div class="fixed-logo animated fadeInDown">
         <a href="{{@blog.url}}">
-            <img class="lgo" src="{{@blog.logo}}">
-            <img class="arrow" src="/content/images/layout/arrow.png">
+            <img class="lgo" src="{{asset "images/icon.png"}}">
+            <img class="arrow" src="{{asset "images/arrow.png"}}">
         </a>
     </div><!-- /.fixed-logo -->
 
     <div class="rwd-menu">
         <a class="arrow" href="{{@blog.url}}">
-            <img src="/content/images/layout/arrow.png">
+            <img src="{{ asset "images/arrow.png"}}">
         </a>
 
         <a class="lgo" href="{{@blog.url}}">
-            <img src="{{@blog.logo}}">
+            <img src="{{asset "images/icon.png"}}">
         </a>
     </div><!-- /.rwd-menu -->
 
@@ -30,6 +30,7 @@
             <hr class="title-hr">
             {{content}}
 
+            <!--
             <div class="comments">
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
