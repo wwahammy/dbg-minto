@@ -17,24 +17,36 @@
 			</div><!-- /.col -->
 
 			<div class="col-lg-12 full-column">
-				<p><br>Follow him on <a href="http://twitter.com/dguilak" target="_blank" class="button twitter">Twitter</a> or whatever.</p>
+				<p>
+					Follow him on <a href="http://twitter.com/dguilak" target="_blank" class="button twitter">Twitter</a>,
+					or consume some of his content:
+				</p>
 			</div><!-- /.col -->
 
-			<div class="col-lg-12">
-				<h2>Work</h2>
-				<hr class="tiny">
+			<div class="col-lg-12 full-column">
+				<!-- <h2>Content</h2>
+				<hr class="tiny"> -->
+				<div class="post-list">
+					{{#foreach posts}}
+						<div class="post-item">
+							<a href="{{url}}" class="button dark">{{title}}</a>
+						</div>
+					{{/foreach}}
+			  </div><!-- /.post-list -->
 			</div><!-- /.col -->
 		</div><!-- /.col -->
 	</div><!-- /.row -->
 </div><!-- /.featured-top -->
 
+<!-- This will be for projects, later
 {{! The main content area on the homepage }}
 <main id="content" class="work" role="main">
 	<div class="col-sm-12 no-padding">
 		{{! The tag below includes the post loop - partials/loop.hbs }}
-		{{> "loop"}}
-	</div><!-- /.col -->
+		{{! {{> "loop"}} }}
+	</div>
 </main>
+-->
 
 <script>
 	$(function(){

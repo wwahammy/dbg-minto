@@ -1351,6 +1351,16 @@ span.underline {
     line-height: 60px;
     margin: 0;
 }
+.post-list {
+  margin-top: 55px;
+}
+
+.post-list .post-item {
+  font-size: 31px;
+  color: #4c4d57;
+  line-height: 60px;
+  margin: 0;
+}
 hr.tiny {
     width: 19%;
     border-width: 14px;
@@ -1392,10 +1402,10 @@ hr.tiny {
     height: 360px;
 }
 article:nth-child(3n+1) .overlay {
-  background: rgba(252, 82, 81, .75);
+  background: rgba(81, 206, 252, 0.75);
 }
 article:nth-child(3n+2) .overlay {
-  background: rgba(81, 206, 252, 0.75);
+  background: rgba(252, 82, 81, .75);
 }
 article:nth-child(3n+3) .overlay {
   background: rgba(100, 222, 81, 0.71);
@@ -1608,51 +1618,55 @@ article:hover .overlay {
 }
 }
 @media (max-width:768px) {
-    .content.container-fluid {
+  .content.container-fluid {
     margin: 100px 2% 40px!important;
-}
-.single-inner{
+  }
+  .single-inner{
     padding: 0 40px;
-}
-.content h1, .content h2, .typed-cursor {
+  }
+  .content h1, .content h2, .typed-cursor {
     font-size: 51px;
-}
-.content hr {
+  }
+  .content hr {
     width: 40%;
     border-width: 15px;
     margin: 40px 0 50px 15px;
-}
-.content hr.tiny {
+  }
+  .content hr.tiny {
     margin-left: 0;
     margin-top: 15px;
     margin-bottom: 0;
     border-width: 11px;
-}
-.content p {
+  }
+  .content p {
     font-size: 17px;
     line-height: 39px;
-}
-a.button {
+  }
+  .content .post-list .post-item {
+    font-size: 17px;
+    line-height: 39px;
+  }
+  a.button {
     padding: 7px 11px 5px;
-}
-span.underline {
+  }
+  span.underline {
     border-width: 4px;
     padding-bottom: 4px;
-}
-.work .box img {
+  }
+  .work .box img {
     width: 100%;
-}
-.single h1{
+  }
+  .single h1{
     font-size: 50px;
-}
-.single h3{
+  }
+  .single h3{
     font-size: 26px;
     line-height: 40px;
-}
-.single p{
+  }
+  .single p{
     font-size: 16px;
     line-height: 33px;
-}
+  }
 }
 @media (max-width:992px){
 
