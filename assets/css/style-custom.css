@@ -1369,8 +1369,8 @@ hr.tiny {
 .typed-cursor {
     opacity: 1;
     /*Uncomment if you want a blinking cursor*/
-    /*-webkit-animation: blink .7s infinite;
-    animation: blink .7s infinite;*/
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
     font-size: 150px;
     display: inline;
     font-weight: 700;
