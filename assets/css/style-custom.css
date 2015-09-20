@@ -1352,7 +1352,7 @@ span.underline {
     margin: 0;
 }
 .post-list {
-  margin-top: 55px;
+  margin: 55px 0;
 }
 
 .post-list .post-item {
