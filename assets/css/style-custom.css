@@ -207,9 +207,9 @@ a {
 a:focus, a:hover {
     color: #428bca;
 }
-p a:focus, p a:hover{ 
+p a:focus, p a:hover{
 	border-bottom: 2px solid #428bca;
-    padding-bottom: 1.5px; 
+    padding-bottom: 1.5px;
 }
 a:focus {
     outline-offset: -2px;
@@ -594,7 +594,7 @@ pre code {
     .container {
     width: 1170px;
     }
-    .rwd-menu{ 
+    .rwd-menu{
     display: none;
     }
 }.container-fluid {
