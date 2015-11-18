@@ -6,27 +6,29 @@
 {{! Everything inside the #post tags pulls data from the page }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    </nav>
-</header>
+<div class="container single">
+    <div class="fixed-logo animated fadeInDown">
+        <a href="{{@blog.url}}">
+            <img class="lgo" src="{{asset "images/logo.svg"}}">
+            <img class="arrow" src="{{asset "images/arrow.png"}}">
+        </a>
+    </div><!-- /.fixed-logo -->
 
-<main class="content" role="main">
+    <div class="rwd-menu">
+        <a class="arrow" href="{{@blog.url}}">
+            <img src="{{ asset "images/arrow.png"}}">
+        </a>
 
-    <article class="{{post_class}}">
-    {{! Everything inside the #post tags pulls data from the post }}
+        <a class="lgo" href="{{@blog.url}}">
+            <img src="{{asset "images/logo.svg"}}">
+        </a>
+    </div><!-- /.rwd-menu -->
 
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
-        </header>
-
-        <section class="post-content">
+    <div class="row animated bounceInUp">
+        <div class="col-lg-12 single-inner">
+            <h1>{{title}}</h1>
+            <hr class="title-hr">
             {{content}}
-        </section>
-
-    </article>
-
-</main>
+    </div><!-- /.row -->
+</div><!-- /.container -->
 {{/post}}

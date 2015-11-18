@@ -7,9 +7,12 @@
             <hr>
         </div><!-- /.box-content -->
     </a><!-- /.overlay -->
-
+    {{#if image}}
     <a href="{{url}}">
         <img src="{{image}}">
     </a>
+    {{else}}
+    {{excerpt}}
+    {{/if}}
 </article><!-- /.article -->
 {{/foreach}}

@@ -115,7 +115,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-style: normal;
 }
 
-/* Apply these base styles to all icons */
+/* Apply these base styles to all icons
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "casper-icons", "Open Sans", sans-serif;
     speak: none;
@@ -130,7 +130,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 
 /* Each icon is created by inserting the correct character into the
-   content of the :before pseudo element. Like a boss. */
+   content of the :before pseudo element. Like a boss. 
 .icon-ghost:before {
     content: "\f600";
 }
@@ -155,12 +155,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 .icon-location:before {
     content: "\f607";
-    margin-left: -3px; /* Tracking fix */
+    margin-left: -3px; /* Tracking fix
 }
 .icon-link:before {
     content: "\f608";
 }
-
+*/
 
 /* ==========================================================================
    2. General - Setting up some base styles

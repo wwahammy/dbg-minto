@@ -13,42 +13,53 @@
 			<hr>
 
 			<div class="col-lg-12 full-column">
-				<p>A person currently residing in San Francisco and working as a code-maker.</p>
+				<p>The thinkerings of Eric Schultz, a software developer and free, libre and open source software advocate in Wisconsin.</p>
 			</div><!-- /.col -->
 
 			<div class="col-lg-12 full-column">
 				<p>
-					Follow him on <a href="http://twitter.com/dguilak" target="_blank" class="button twitter">Twitter</a>,
-					or consume some content:
+					Follow him on <a href="http://twitter.com/wwahammy" target="_blank" class="button twitter">Twitter</a>,
+					<a href="http://github.com/ericschultz" target="_blank" class="button github">Github</a>,
+					<a href="https://www.linkedin.com/in/wwahammy" target="_blank" class="button linkedin">LinkedIn</a>
+					or read some posts:
 				</p>
 			</div><!-- /.col -->
 
 			<div class="col-lg-12 full-column">
-				<!-- <h2>Content</h2>
-				<hr class="tiny"> -->
-				<div class="post-list">
+				 <h2>Posts</h2>
+
+				<hr class="tiny">
+
+			<!--	<div class="post-list">
 					{{#foreach posts}}
 						<div class="post-item">
 							<a href="{{url}}" class="button dark">{{title}}</a>
+							<p>{{excerpt}}</p>
+							<p>{{date}}</p>
 						</div>
 					{{/foreach}}
-			  </div><!-- /.post-list -->
-			</div><!-- /.col -->
-		</div><!-- /.col -->
-	</div><!-- /.row -->
-</div><!-- /.featured-top -->
+			  </div>--><!-- /.post-list -->
+					<div class="row">
+						<div class="col-sm-12">
+							{{! The tag below includes the post loop - partials/loop.hbs }}
+								{{> "postloop"}}
+							</div>
+				</div>
 
-<!-- This will be for projects, later
-{{! The main content area on the homepage }}
-<main id="content" class="work" role="main">
-	<div class="col-sm-12 no-padding">
-		{{! The tag below includes the post loop - partials/loop.hbs }}
-		{{! {{> "loop"}} }}
-	</div>
-</main>
--->
+
+			</div>
+			{{> "footer"}}
+			<!-- /.col -->
+		</div><!-- /.col -->
+
+
+	</div><!-- /.row -->
+</div>
+
+
 
 <script>
+// @license magnet:?xt=urn:btih:5305d91886084f776adcf57509a648432709a7c7&dn=x11.txt x11
 	$(function(){
 		$(".title").typed({
 			strings: ["{{@blog.description}}"],
@@ -57,4 +68,5 @@
 			startDelay: 600
 		});
 	});
+	// @license-end
 </script>
