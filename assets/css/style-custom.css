@@ -1740,7 +1740,7 @@ article:hover .overlay {
 
 
 .page-number {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .older-posts,
