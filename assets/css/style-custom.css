@@ -1747,3 +1747,7 @@ article:hover .overlay {
 .newer-posts {
   border: none;
 }
+
+hr {
+  text-align:left; /* otherwise the alignment is totally wrong in IE and even Edge */
+}
