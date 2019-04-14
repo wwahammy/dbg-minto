@@ -4,7 +4,7 @@
 <div class="container-fluid content fadeIn animated">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="hidden">{{@blog.title}}</h1>
+			<h1 class="hidden">{{@site.title}}</h1>
 
 			<div class="title-container">
 				<h1 class="fadeInDown animated title"></h1>
@@ -62,7 +62,7 @@
 // @license magnet:?xt=urn:btih:5305d91886084f776adcf57509a648432709a7c7&dn=x11.txt x11
 	$(function(){
 		$(".title").typed({
-			strings: ["{{@blog.description}}"],
+			strings: ["{{@site.description}}"],
 			typeSpeed: 60,
 			showCursor: true,
 			startDelay: 600
