@@ -11,11 +11,13 @@
     "@fontsource/merriweather": "^5.0.8",
     "animate.css": "^4.1.1",
     "esbuild": "^0.19.10",
-    "ghost-cli": "^1.25.3"
+    "ghost-cli": "^1.25.3",
+    "jquery": "^3.7.1"
   },
   "dependencies": {},
   "scripts": {
-    "build": "yarn build:styles",
+    "build": "yarn build:styles && yarn build:js",
+    "build:js": "esbuild --bundle js/jquery.js --outdir=assets/js-build",
     "build:styles": "yarn build:styles:animate && yarn build:styles:fonts",
     "build:styles:animate": "esbuild --bundle styles/animate.css --outdir=assets/css-build",
     "build:styles:fonts": "esbuild --bundle styles/fonts.css --loader:.woff2=file --loader:.woff=file --outdir=assets/css-build"
