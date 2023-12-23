@@ -11,7 +11,8 @@
     "@fontsource/merriweather": "^5.0.8",
     "animate.css": "^4.1.1",
     "esbuild": "^0.19.10",
-    "ghost-cli": "^1.25.3"
+    "ghost-cli": "^1.25.3",
+    "jquery": "^3.7.1"
   },
   "dependencies": {},
   "scripts": {
