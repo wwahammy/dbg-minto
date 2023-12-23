@@ -13,5 +13,10 @@
     "ghost-cli": "^1.25.3"
   },
   "dependencies": {
+  },
+
+  "scripts": {
+    "build": "yarn build:fonts",
+    "build:fonts": "esbuild --bundle styles/fonts.css --loader:.woff2=file --outdir=assets/css-build"
   }
 }
