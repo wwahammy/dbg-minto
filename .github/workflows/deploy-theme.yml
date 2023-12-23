@@ -1,4 +1,4 @@
-name: Deploy Theme
+name: Build and Deploy Theme
 on:
   pull_request:
   push:
