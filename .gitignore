@@ -1,2 +1,5 @@
 .DS_Store
 node_modules
+
+# built css assets
+assets/css-build

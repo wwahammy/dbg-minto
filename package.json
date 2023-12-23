@@ -6,6 +6,17 @@
     "email": "eric@wwahammy.com"
   },
   "devDependencies": {
+    "@fontsource-variable/open-sans": "^5.0.21",
+    "@fontsource/lato": "^5.0.18",
+    "@fontsource/merriweather": "^5.0.8",
+    "esbuild": "^0.19.10",
     "ghost-cli": "^1.25.3"
+  },
+  "dependencies": {
+  },
+
+  "scripts": {
+    "build": "yarn build:fonts",
+    "build:fonts": "esbuild --bundle styles/fonts.css --loader:.woff2=file --outdir=assets/css-build"
   }
 }
