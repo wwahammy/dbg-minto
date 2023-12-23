@@ -2,6 +2,21 @@
 # yarn lockfile v1
 
 
+"@fontsource-variable/open-sans@^5.0.21":
+  version "5.0.21"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/open-sans/-/open-sans-5.0.21.tgz#78592a00ada2b70f43a4868436794223d1dbca99"
+  integrity sha512-aLE1iTSx2J0NZw3capyh19GALUXiELEG4bgwABELVaZdeRHMTU5aApHa+KRC9KlfH0DzaDDLB5aSQBAOhy/R5Q==
+
+"@fontsource/lato@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.18.tgz#ad6037c5f1bf8e3604225ef53464fef60c2fea86"
+  integrity sha512-lJa0f4MPXtHsZsLz37wo7d4m5odfOdwCNRg0IjV06ri/fIPypJLEuUB12oWCJ38DDD/XhKVSQPo8BWV8CRBhzQ==
+
+"@fontsource/merriweather@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/merriweather/-/merriweather-5.0.8.tgz#057ecbcd55fcd6592e4ce3254645075299916823"
+  integrity sha512-4vvR6psdKcGzaFCQL8fGCqMI/mOLKD+mhmUe3iQilx/4VFkIcF7wswWHZ7KCPeF24edX8yd0QXX0DQ1CenMrYA==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.1.tgz#a21117b19ee9be70c379ec1877537ef2e1c63301"

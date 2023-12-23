@@ -7,5 +7,10 @@
   },
   "devDependencies": {
     "ghost-cli": "^1.25.3"
+  },
+  "dependencies": {
+    "@fontsource-variable/open-sans": "^5.0.21",
+    "@fontsource/lato": "^5.0.18",
+    "@fontsource/merriweather": "^5.0.8"
   }
 }
