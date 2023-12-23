@@ -16,7 +16,8 @@
   },
   "dependencies": {},
   "scripts": {
-    "build": "yarn build:styles",
+    "build": "yarn build:styles && yarn build:js",
+    "build:js": "esbuild --bundle js/jquery.js --outdir=assets/js-build",
     "build:styles": "yarn build:styles:animate && yarn build:styles:fonts",
     "build:styles:animate": "esbuild --bundle styles/animate.css --outdir=assets/css-build",
     "build:styles:fonts": "esbuild --bundle styles/fonts.css --loader:.woff2=file --loader:.woff=file --outdir=assets/css-build"
