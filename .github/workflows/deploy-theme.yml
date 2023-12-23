@@ -1,5 +1,6 @@
 name: Deploy Theme
 on:
+  pull_request:
   push:
     branches:
       - main
@@ -16,6 +17,7 @@ jobs:
       - run: 'yarn build'
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v1
+        if: ${{ github.event_name != 'pull_request' }}
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
