@@ -1733,7 +1733,7 @@ article:hover .overlay {
     color: #4C4D57;
 }
 
-.page-footer a[class^="icon-"], .page-footer a[class*=" icon-"] {
+.page-footer a[class^="fa"], .page-footer a[class*=" fa"] {
     font-size: 24px;
     padding: 0 .1em;
 }
