@@ -11,7 +11,7 @@
     "@fontsource/merriweather": "^5.2.11",
     "@fortawesome/fontawesome-free": "^7.1.0",
     "animate.css": "^4.1.1",
-    "esbuild": "^0.25.11",
+    "esbuild": "^0.27.2",
     "ghost-cli": "^1.25.3",
     "jquery": "^3.7.1"
   },
