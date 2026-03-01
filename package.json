@@ -9,11 +9,11 @@
     "@fontsource-variable/open-sans": "^5.2.7",
     "@fontsource/lato": "^5.2.7",
     "@fontsource/merriweather": "^5.2.11",
-    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@fortawesome/fontawesome-free": "^7.2.0",
     "animate.css": "^4.1.1",
-    "esbuild": "^0.27.2",
-    "ghost-cli": "^1.25.3",
-    "jquery": "^3.7.1"
+    "esbuild": "^0.27.3",
+    "ghost-cli": "^1.28.4",
+    "jquery": "^4.0.0"
   },
   "dependencies": {},
   "scripts": {
